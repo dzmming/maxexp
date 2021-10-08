@@ -42,3 +42,4 @@ df = spark.read \
   .csv("/mnt/daxadsl/csv")  \
   
 df.printSchema()
+display(df)
