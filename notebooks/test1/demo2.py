@@ -42,4 +42,5 @@ df = spark.read \
   .option("inferSchema", True) \
   .csv("/mnt/daxadsl/csv")  \
   
+df.printSchema()
 display(df)
