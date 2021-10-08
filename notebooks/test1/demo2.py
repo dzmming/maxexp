@@ -31,3 +31,14 @@ with open("/dbfs/tmp/test_dbfs.txt", 'w') as f:
   
   
 #copyfile('/home/deng/ddd.txt', '/dbfs/tmp/demo3.txt')
+
+
+# COMMAND ----------
+
+
+df = spark.read \
+  .option("header", "true") \
+  .option("inferSchema", False) \
+  .csv("/mnt/daxadsl/csv")  \
+  
+display(df)
