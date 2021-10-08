@@ -38,7 +38,7 @@ with open("/dbfs/tmp/test_dbfs.txt", 'w') as f:
 
 df = spark.read \
   .option("header", "true") \
-  .option("inferSchema", False) \
+  .option("inferSchema", True) \
   .csv("/mnt/daxadsl/csv")  \
   
 display(df)
