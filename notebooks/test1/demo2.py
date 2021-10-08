@@ -11,7 +11,7 @@ dbutils.fs.ls("/mnt/daxadsl/csv")
 
 df = spark.read \
   .option("header", "true") \
-  .option("inferSchema", True) \
+  .option("inferSchema", False) \
   .csv("/mnt/daxadsl/csv")  \
   
 display(df)
