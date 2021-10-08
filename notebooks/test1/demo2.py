@@ -35,6 +35,7 @@ with open("/dbfs/tmp/test_dbfs.txt", 'w') as f:
 
 # COMMAND ----------
 
+#This is a git integration test.
 
 df = spark.read \
   .option("header", "true") \
