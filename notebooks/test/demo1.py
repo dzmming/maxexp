@@ -4,7 +4,7 @@
 # COMMAND ----------
 
 #dbutils.fs.fsutils.head('/init-scripts/datadog-install-driver-only.sh')
-dbutils.fs.mkdirs("dbfs:/databricks/scripts/")
+# dbutils.fs.mkdirs("dbfs:/databricks/scripts/")
 
 display(dbutils.fs.ls("dbfs:/init-scripts/"))
 
